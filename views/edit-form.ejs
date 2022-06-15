@@ -1,0 +1,26 @@
+<form method="post">
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" placeholder="Enter name" name="user_name"
+                value="<%= db_rows_array[0].user_name%>"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" placeholder="Enter email" name="user_email"
+                value="<%= db_rows_array[0].user_email%>"></td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="text" placeholder="Enter Mobile" name="user_mobile"
+                value="<%= db_rows_array[0].user_mobile%>"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                <input type="button" value="display" onclick="window.location='display';">
+                
+            </td>
+        </tr>
+    </table>
+</form>
